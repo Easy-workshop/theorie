@@ -1,0 +1,7 @@
+1-menu responsive=collapse
+2-ajout du menu
+3-mysript
+$(document).ready(function(){
+$('.collapse').collapse();
+}
+)

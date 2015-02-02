@@ -1,0 +1,10 @@
+body {
+padding-top: 70px;
+}
+.navigation .breadcrumb{
+float:left;
+margin:7px 10px;
+}
+.header blockquote{
+margin-top:35px;
+}

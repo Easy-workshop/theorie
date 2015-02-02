@@ -1,0 +1,3 @@
+1-jumbotron affiche du texte en grand caractère.
+2-ajout des icones(à copier/coller).
+3-ajouter le bas de la page(footer)

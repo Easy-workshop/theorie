@@ -1,0 +1,38 @@
+body {
+padding-top: 70px;
+}
+.navigation .breadcrumb{
+float:left;
+margin:7px 10px;
+}
+
+.header blockquote{
+margin-top:35px;
+}
+
+.collection, .fabric, .box{
+height:250px;
+width:250px;
+margin:0 auto;
+}
+
+.collection{
+background: url(../../img/doudou1.jpg) center;
+background-size:cover;
+}
+
+.fabric{
+background:url(../../img/doudou2.jpg) center;
+background-size:cover;
+
+}
+.box{
+background:url(../../img/doudou3.jpg) center;
+background-size:cover;
+}
+
+.mini {
+height:100px;
+width:100px;
+
+}

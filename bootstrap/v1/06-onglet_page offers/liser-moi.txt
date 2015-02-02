@@ -1,0 +1,4 @@
+1-ajout du code dans <div class="container content">
+2-onglet:ok
+3-ajout des images mise à jour mystyle.css+ajout d'image url(//.jpg).
+4-aligner toute la row (image+bouton+text) avec text-center.

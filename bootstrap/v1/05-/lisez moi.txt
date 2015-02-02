@@ -1,0 +1,14 @@
+1-ajout du logo et de la citation dans un row->col
+2-Ajout de 
+.header blockquote{
+margin-top:35px;
+}
+dans mystyle pouraffichier le logo+la citation dans la même ligne
+
+
+3 pour décaler(tirer) la citation à droite on utilise:
+col-xs-offset-4
+dans le HTML
+
+4- fin de la nomenclature finale: copier/coller+supprimer le contenu de la 
+<div class="container content">

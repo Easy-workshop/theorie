@@ -1,0 +1,2 @@
+1) nav-stacked permet d'afficher du texte avec lien ce qui n'est pas le cas avec 
+<div class="panel-body"><p>tatatatatt</p>

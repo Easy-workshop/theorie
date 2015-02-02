@@ -1,0 +1,11 @@
+1-mettre le breadcrum(left) et le menu(à droite)
+
+2-mettre la div breadxrum à l'intérieur de la div menu
+3-Ajouter:
+
+.navigation .breadcrumb{
+float:left;
+margin:7px 10px;
+}
+
+dans le mycss.css

@@ -1,0 +1,6 @@
+1-fixer le menu en haut
+2-le texte de début n'est pas visible donc ajouter
+body{
+padding-top: 70px;
+}
+a mystyle.css

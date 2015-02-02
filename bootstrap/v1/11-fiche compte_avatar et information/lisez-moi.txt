@@ -1,0 +1,2 @@
+1-ajout image+maj mystyle.css class avatar+class mini.
+2ajout de abbr permet d'avoir l'info si on pose le curseur sur P ou bien @

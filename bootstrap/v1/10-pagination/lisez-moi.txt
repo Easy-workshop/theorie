@@ -1,0 +1,2 @@
+1-code de la formation ne marche pas donc copier/coller site offciel boostrap.
+2-&laquo; ==fleche gauche  et &raquo;===fléche droite

@@ -1,0 +1,1 @@
+ceci sont les données du XMLHttpRequest

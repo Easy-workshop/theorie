@@ -5,7 +5,7 @@ import java.io.IOException;
 
 import entity.Film;
 
-public class FileFilmDao {
+public class FileFilmDao implements FiledaoInterface{
 
 	public void save(Film film){
 		FileWriter writer;
@@ -18,6 +18,11 @@ public class FileFilmDao {
 		e.printStackTrace();
 		}
 		
+	}
+
+	public Film getByid(int id) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	

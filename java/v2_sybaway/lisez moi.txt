@@ -1,0 +1,22 @@
+
+1/Dynamic web projet sur Eclipse.
+2/Mettre les jar de Spring+Hibernate dans le rep:WEB-INF/lib
+3/Copier/coller trois fichiers dans :WEB-INF, web.xml...
+4/Rajouter log4j.jar dans lerep:WEB-INF/lib+mettre log4j.propertiess.properties dans le rep:
+java ressource/src
+-----DEV---
+5/créer classe produit dans src et le mettre dans le package dao(accés aux donnée) +getters+setters+2 constructeur .
+6/interface+autre classe qui implémente l'interface.
+7/couche(DAO,METIER) implémenter les cou
+
+8/ editer ==>spring.bean.xml==>les deux bean des deux couches dao et metier).
+----
+1:7min==> fin de la 1ére partie affichage de la methode init.
+----Début de SPRING MVC----
+editer le fichier:application-servlet-config.xml
+------1:30==> fin de l'affichage de la page .produits.jsf-----
+--------------------------------------------------------------
+2:33 début hibernate.
+pour utiliser hibernate=
+1/ copier le fichier(xxx.hbm.xml) de mapping produit dans le repertoire /dao
+2/mettre le fichier de configuration (Hibernate.cfg)+util/HibernateUtil.java) le mettre dans /src

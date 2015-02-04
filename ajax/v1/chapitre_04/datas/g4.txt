@@ -1,0 +1,15 @@
+{
+"image":
+{
+"ch_img_id":25,
+"ch_img_rubId":"Calenque",
+"ch_img_titre":"titreg4",
+"ch_img_sousTitre":"soustitreg4",
+"ch_img_description":"descg4",
+"ch_img_texte":"textg4",
+"ch_img_large":"450",
+"ch_img_haut":"299",
+"ch_img_orientation":Paysage,
+"ch_img_fichier":"g4.txt",
+"ch_img_keywords":"keywordg4"}
+}

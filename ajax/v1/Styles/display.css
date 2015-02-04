@@ -52,6 +52,26 @@ header {
 	height:58px;
 	width:88px;
 }
+#planche-contact img.Paysage {
+	left:23px;
+	top:38px;
+	height:58px;
+	width:88px;
+}
+#planche-contact img.Portrait {
+	left:38px;
+	top:23px;
+	height:88px;
+	width:58px;
+}
+
+
+
+
+
+
+
+
 sidebar {
 	height:450px;
 	border-left:1px solid #E1E1E1;

@@ -33,9 +33,9 @@ var diapos=arg.getElementsByTagName('image')
 var nb_diapo=diapos.length
 for (i=0;i<nb_diapo;i++){
 var  dia_temp = diapos[i]
-var img = dia_temp.getElementsByTagName('ch_img_fichier')[0].firstChild.NodeValue 
-var infos = dia_temp.getElementsByTagName('ch_img_sources')[0].firstChild.NodeValue
-var folder = dia_temp.getElementsByTagName('ch_img_folder')[0].firstChild.NodeValue
+var img = dia_temp.getElementsByTagName('ch_img_fichier')[0].innerHTML
+var infos = dia_temp.getElementsByTagName('ch_img_sources')[0].innerHTML
+var folder = dia_temp.getElementsByTagName('ch_img_folder')[0].innerHTML
 var orientation = dia_temp.getAttribute('orientation')
 place_diapo(img,infos,folder,orientation)
 

@@ -1,0 +1,54 @@
+#informations{
+margin:10px;
+background-color:#FAE2D1
+padding-bottom:20px
+}
+#informations img{
+float:right;
+padding:20px;
+}
+p {
+font-size:10px;
+padding-right:10px;
+padding-left:10px;
+}
+#ch_img_fichier,#ch_img_id{
+color: #EB8A41;
+font-size:11px;
+font-weight:bold;
+float:left;
+padding-right:10px;
+padding-top:6px;
+}
+#ch_img_titre{
+font-weight:bold;
+}
+#ch_img_description{
+padding-bottom:4px;
+}
+#ch_img_orientation,#ch_img_larg,#ch_img_haut{
+clear:left;
+color:#999;
+font-size:italic;
+
+
+}
+#hr{
+border:0;
+border-top:1px  #EB8A41  dotted;
+background-color:transparent;
+padding-top:2px;
+padding-bottom:2px	
+clear:both;
+
+}
+
+
+
+#ch_img_orientation,#ch_img_larg,#ch_img_haut{
+clear:left
+color:#999;
+font-style:italic;
+
+
+}

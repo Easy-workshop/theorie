@@ -1,6 +1,10 @@
 {
 "image":{
+<<<<<<< HEAD
 "ch_img_id":2,
+=======
+"ch_img_id":25,
+>>>>>>> 12305c23b5b80d3d54161eeb7b2673199ee1bade
 "ch_img_rubId":"Calenques",
 "ch_img_titre":"titreG2",
 "ch_img_sousTitre":"soustitreG2",

@@ -1,0 +1,117 @@
+1/
++)NETVIBES-->MAVEN-->javaApplication-->NAME=(core)
+                                     groupeId:(com.elephorm.formation.core)   [nom packge]
+                                     Version:(snap...)
+une fois le projet créé:
++)Bouton droitsur le package:com.elephorm.formation.core+new package nom==>(...entity)+création new class sur ce packgage==>(Film)
+
++)
+private String titre;
+private String genre;
+private String nbExemplaires;
++)getter et setter
+
++)Bouton droit sur le package:com.elephor.formation.core+new package(...service)+dedans class 
+FilmService
++)ajouter une méthode dans la classe. 
+public void registerFilm(Film film)
+{
+public void registerFilm(Film film)
+System.out.println("film enregistré")
+}
+
++)rename app avec app1)
+
++)ajouter le code ci-dessous sur le main1:   [test unitaire]
+Film film=new Film();
+film.setTitre(""T1)
+film.setGenre("g1")
+film.setnbExemplaires(2)
+FilmService  service= new FilmService();
+service.registerFilm(film)
+
+-----------FIN COUCHE SERVICE------------------
+2/Couche controleur
+
++)Bouton droitsur le package:com.elephorm.formation.core+new package nom==>(...controller)+création new class sur ce packgage==>(DefaultFilmController)
+implementer dans la class la méthode:
+public void registerFilmFromConsoleInput(){
+...
+Scanner
+...
+film.setTitre...
+...
+copier/coller()
+}
++) Allez sur app1 et supprimer le code existant+ mettre
+DefaultFilmController controller=new DefaultController();
+controller.registerFilmConsole.Input();
+
+--------------------------------------------FIN Couche controlleur------------
+3/Couche DAO
+
++)Bouton droitsur le package:com.elephorm.formation.core+new package nom==>(...repository)+création new class sur ce packgage==>(FileFilmDAO)
+implémenter cette methode dans la classe:
+public vois save(Film film){
+..
+FileWriter...
+(copier coller)
+...
+}
++)aller sur la couche service class (FilmService) et supprimer ce qui existe et mettre
+
+FileFilmDao dao=new FileFilmDao();
+dao.save(film);
+---------------------------------voir les enregistrement sur un fichier externe---------
+4/DEVELOPPER UN DAO JDBC
+VOIR LE MCD DE LA BD.
++) ajouter dépendance MAVEN dans le fichier pom.xm avec BD mysql lors du rajout de la <dependency>....</> MAven télécharge la librairies
++)supprimer ce qui se trouve a l'intérieur de la méhode save() et mettre ceci:
+
+Public void save(Film film){
+Connection con =null;
+Class.forname("com.mysql.jdbc.Driver").newInstance();
+con =DriverManager.getConnection("jdbc:mysql://localhoste/VIDEO","VIDEO","VIDEO");
+System.out.println(CONNEXION KO");
+
+PreparedStatement pstmt=con.preparedStatement("INSERT INTO MOVIE(TITLE,MOVIE_TYPE,COPIES) VALUES(?,?,?)")
+pstmt.setString(1,film.getTitre());
+pstmt.setString(2,film.getTitre());
+pstmt.setInt(1,film.getNbExemeplaires());
+
+pstmt.executeUpdate();
+
+
+}catch(Throwable e){
+    System.out.println("Connexion ko");   
+    e.printStackTrace();
+} finally{
+try{
+if (con!=null){
+con.close();
+   }
+}catch (SQLException ex){
+
+}
+
+}
+
+
+}
+
++) retour dans la classe FilmService suppriler ce qu'il y'a et mettre:
+JDBCFilmDao dao=new JDBCFilmDao();
+dao.save(film);
+------------------------------------INSERTION D'UN FILM DANS LA TABLE--------------------------
+5/HIBERNATE
+ouvrir 3 ficiher(..hbm.xml,...cfh.xml,log4g.properties) aprés installation de Hibernate,hibernate va créer un répertoire (src/main/ressources)
+hibernate va créer un nouvelle table user
++) aller sur le package:entity et créer un classe User
+public class User{
+
+private  Integer id;
+private String nom;
+}
++getter et setter
+
++)Aller sur pom.xml et ajouter 3 dépendances [Librairie d Hibernate MAVEN se charge de les installer lors d'un clean+build du projets]

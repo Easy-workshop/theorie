@@ -1,19 +1,19 @@
 1/
-+)NETVIBES-->MAVEN-->javaApplication-->NAME=(core)
++ok)NETVIBES-->MAVEN-->javaApplication-->NAME=(core)
                                      groupeId:(com.elephorm.formation.core)   [nom packge]
                                      Version:(snap...)
 une fois le projet créé:
-+)Bouton droitsur le package:com.elephorm.formation.core+new package nom==>(...entity)+création new class sur ce packgage==>(Film)
++ok)Bouton droitsur le package:com.elephorm.formation.core+new package nom==>(...entity)+création new class sur ce packgage==>(Film)
 
-+)
++ok)
 private String titre;
 private String genre;
-private String nbExemplaires;
-+)getter et setter
+private int nbExemplaires;
++ok)getter et setter
 
-+)Bouton droit sur le package:com.elephor.formation.core+new package(...service)+dedans class 
++ok)Bouton droit sur le package:com.elephor.formation.core+new package(...service)+dedans class 
 FilmService
-+)ajouter une méthode dans la classe. 
++ok)ajouter une méthode dans la classe. 
 public void registerFilm(Film film)
 {
 public void registerFilm(Film film)
@@ -30,10 +30,11 @@ film.setnbExemplaires(2)
 FilmService  service= new FilmService();
 service.registerFilm(film)
 
------------FIN COUCHE SERVICE------------------
+-----------FIN COUCHE SERVICE Appel de la méthode service:ok------------------
+
 2/Couche controleur
 
-+)Bouton droitsur le package:com.elephorm.formation.core+new package nom==>(...controller)+création new class sur ce packgage==>(DefaultFilmController)
++ok)Bouton droitsur le package:com.elephorm.formation.core+new package nom==>(...controller)+création new class sur ce packgage==>(DefaultFilmController)
 implementer dans la class la méthode:
 public void registerFilmFromConsoleInput(){
 ...
@@ -43,30 +44,31 @@ film.setTitre...
 ...
 copier/coller()
 }
-+) Allez sur app1 et supprimer le code existant+ mettre
++ok) Allez sur app1 et supprimer le code existant+ mettre
 DefaultFilmController controller=new DefaultController();
 controller.registerFilmConsole.Input();
 
---------------------------------------------FIN Couche controlleur------------
+--------------------------------------------FIN Couche controlleur app appéle,controlleur appèle service...ok------------
 3/Couche DAO
-
 +)Bouton droitsur le package:com.elephorm.formation.core+new package nom==>(...repository)+création new class sur ce packgage==>(FileFilmDAO)
 implémenter cette methode dans la classe:
-public vois save(Film film){
+public void save(Film film){
 ..
 FileWriter...
 (copier coller)
 ...
 }
-+)aller sur la couche service class (FilmService) et supprimer ce qui existe et mettre
++ok)aller sur la couche service class (FilmService) et supprimer ce qui existe et mettre
 
 FileFilmDao dao=new FileFilmDao();
 dao.save(film);
----------------------------------voir les enregistrement sur un fichier externe---------
+---------------------------------voir les enregistrement sur un fichier externe ok---------
+
+
 4/DEVELOPPER UN DAO JDBC
 VOIR LE MCD DE LA BD.
-+) ajouter dépendance MAVEN dans le fichier pom.xm avec BD mysql lors du rajout de la <dependency>....</> MAven télécharge la librairies
-+)supprimer ce qui se trouve a l'intérieur de la méhode save() et mettre ceci:
++ok) ajouter dépendance MAVEN dans le fichier pom.xm avec BD mysql lors du rajout de la <dependency>....</> MAven télécharge la librairies
++ok) aller sur le package repository et ajouter la classe:(JDBCFilmDao) save() et mettre ceci:
 
 Public void save(Film film){
 Connection con =null;
@@ -99,10 +101,11 @@ con.close();
 
 }
 
-+) retour dans la classe FilmService suppriler ce qu'il y'a et mettre:
+
++ok) retour dans la classe FilmService suppriler ce qu'il y'a et mettre:
 JDBCFilmDao dao=new JDBCFilmDao();
 dao.save(film);
-------------------------------------INSERTION D'UN FILM DANS LA TABLE--------------------------
+------------------------------------INSERTION D'UN FILM DANS LA TABLE ok--------------------------
 5/HIBERNATE
 ouvrir 3 ficiher(..hbm.xml,...cfh.xml,log4g.properties) aprés installation de Hibernate,hibernate va créer un répertoire (src/main/ressources)
 hibernate va créer un nouvelle table user
@@ -115,3 +118,82 @@ private String nom;
 +getter et setter
 
 +)Aller sur pom.xml et ajouter 3 dépendances [Librairie d Hibernate MAVEN se charge de les installer lors d'un clean+build du projets]
+
++)Bouton droitsur le package:com.elephorm.formation.core+new package nom==>(...util)+création new class sur ce packgage==>(HibernateUtil)
+Import..
+....
+public class Hibernateutil{
+private static final SessiosFactory sessionFactory=buildSessionsFactory();
+private static SessionFactory buildSessionFactory(){
+
+try{
+return new Configuration().configure.buildSessionFactory();
+}catch(Throwable ex){
+
+System.err.println("initial SessionFactory creation failed"+ex);
+throw new ExceptionInIntialzerError(ex);
+
+}
+
+
+}
+
+public static SessionFactory getSessionFactory(){
+
+return sessionFactory;
+}
+
+}
++) créé une app0 dans le package (...core) et ajouter:
+HibernateUtil.getSessionsFactory();
+-----------------------------------la table user doit se rajouter automatiquement---------------------------
+/?
++)créer une nouvelle classe (Acteur) dans le package (...entity) et faire son mapping dans le fichier 
+
+public Class Acteur {
+private Integer Id
+private String nom 
+private String prenom
++getter et setter
+
+
+}
++)(Acteur.hbm.xml) voir vidéo
+
++)mettre validate ==>Allez sur le fichier d'ibernate(...cfg.xml) et changer update...hbm2.auto>validate</propertiy>
++)aller sur DAO CAD (package...repository)+créer classe (HibernateFilmDao)+implémenté la méthode save.
+public void save(Film film){
+Session  session=HibernateUtil.getSessionFactory().openSession();
+try{
+sessin.beginTransaction();
+
+session.persist(film);
+
+
+session.getTransaction().commit();
+} catch (HibernateException he) {
+he.printStackTrace();
+if (session.getTransaction() !=null){
+try{
+session.gettransaction().rollback();
+}catch(HibernateException he2){
+he2.printStackTrace();
+}
+}
+} finally{
+if (session !=null){
+  try{
+session.close();
+} catch (Exception e){
+e.printStackTrace();
+}
+}
+}
+
++)Allez dans service ,classe FilmService mettre JDBC en commentaire et 
+HibernateFilmDao dao=new HibernateFilmDao();
+dao.save(film);
++)ajouter dans le fichier ...cfg.xml les classes(User.xml,Film.xml et Acteur.xml)
++)enfin exécuter app1
+----------------------????????????????????????????????????????-------------------------
+

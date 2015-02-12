@@ -1,0 +1,17 @@
+ <div class="container content">
+     <div class="row content">
+	     <div class="jumbotron">
+	       <h1>vivde les doudoux</h1>
+		   <p>
+		   Proin molestie orci eu suscipit gravida. Vestibulum eu ligula non neque hendrerit vehicula. Donec finibus lacus non metus ultricies cursus.
+		   Nulla placerat, augue at elementum lacinia, turpis odio volutpat dolor, in consequat nibh enim ut turpis. Vestibulum id maximus libero. Aenean 
+		   commodo imperdiet ante quis fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas vel 
+		   nunc vitae arcu luctus suscipit in id justo. Donec tristique quis est vel blandit. Curabitur hendrerit sem ac pharetra imperdiet. Pellentesque 
+		   tincidunt metus orci, eu interdum massa malesuada ac. Vivamus est augue, maximus sed blandit et, semper a odio. Pellentesque viverra sem ut finibus
+		   hendrerit.
+		   </p>
+		   <button class="btn btn-success">Passer commande tout de suite</button>
+	     </div>
+	 
+	 </div><!--row content-->
+ </div><!--container content-->

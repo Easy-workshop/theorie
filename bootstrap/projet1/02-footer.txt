@@ -1,0 +1,12 @@
+<div class="container footer text-right">
+     <div class="row footer">
+	     <ul class="list-inline">
+			<li><a href="index.htm">Home</a></li>
+			<li><a href="apropos.htm">A propos</a></li>
+			<li><a href="offers.htm">Les offres</a></li>
+			<li><a href="blog.htm">Blog</a></li>
+			<li><a href="compte.htm">Compte</a></li>
+			<li><a href="contact.htm">Contact</a></li>
+		 </ul>
+	 </div><!--row footer-->
+ </div><!--container footer-->

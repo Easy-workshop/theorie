@@ -7,10 +7,25 @@ package com.elephorm.formation.core.entity;
 
 
 public class Film {
+  
+  private Integer id;   
+
+   
   private String titre;
   private String genre;
   private Integer nbExemplaires;  
 
+  
+   public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+  
+  
+  
     /**
      * @return the titre
      */

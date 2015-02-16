@@ -1,6 +1,7 @@
 package com.elephorm.formation.core.service;
 import com.elephorm.formation.core.entity.Film;
 import com.elephorm.formation.core.repository.FileFilmDAO;
+import com.elephorm.formation.core.repository.HibernateFilmDAO;
 import com.elephorm.formation.core.repository.JDBCFilmDao;
 public class FilmService {
 
@@ -16,8 +17,13 @@ public class FilmService {
     dao.save(film);
 */
      
+   /*
      JDBCFilmDao dao=new JDBCFilmDao();
      dao.save(film);
+ */
+     HibernateFilmDAO  dao=new HibernateFilmDAO();
+     dao.save((film));
+
  }
 
 }

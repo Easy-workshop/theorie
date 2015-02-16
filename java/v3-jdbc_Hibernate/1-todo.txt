@@ -115,11 +115,11 @@ public class User{
 private  Integer id;
 private String nom;
 }
-+getter et setter
+ok+)getter et setter
 
-+)Aller sur pom.xml et ajouter 3 dépendances [Librairie d Hibernate MAVEN se charge de les installer lors d'un clean+build du projets]
++ok)Aller sur pom.xml et ajouter 3 dépendances [Librairie d Hibernate MAVEN se charge de les installer lors d'un clean+build du projets]
 
-+)Bouton droitsur le package:com.elephorm.formation.core+new package nom==>(...util)+création new class sur ce packgage==>(HibernateUtil)
++ok)Bouton droitsur le package:com.elephorm.formation.core+new package nom==>(...util)+création new class sur ce packgage==>(HibernateUtil)
 Import..
 ....
 public class Hibernateutil{
@@ -144,9 +144,9 @@ return sessionFactory;
 }
 
 }
-+) créé une app0 dans le package (...core) et ajouter:
++ok) créé une app0 dans le package (...core) et ajouter:
 HibernateUtil.getSessionsFactory();
------------------------------------la table user doit se rajouter automatiquement---------------------------
+-----------------------------------la table user doit se rajouter automatiquement hibernate à rajouter la table:ok---------------------------
 /?
 +)créer une nouvelle classe (Acteur) dans le package (...entity) et faire son mapping dans le fichier 
 
@@ -156,7 +156,7 @@ private String nom
 private String prenom
 +getter et setter
 
-
+²
 }
 +)(Acteur.hbm.xml) voir vidéo
 

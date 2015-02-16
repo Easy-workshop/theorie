@@ -1,8 +1,4 @@
 package util;
-
-
-
-
 import org.hibernate.*;
 import org.hibernate.cfg.*;
 

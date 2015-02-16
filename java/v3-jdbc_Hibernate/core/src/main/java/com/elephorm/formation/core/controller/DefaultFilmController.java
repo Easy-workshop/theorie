@@ -5,6 +5,7 @@ import com.elephorm.formation.core.service.FilmService;
 import java.util.Scanner;
 
 public class DefaultFilmController {
+   
     public void registerFilmFromConsoleInput(){
     Scanner sc=new Scanner(System.in);
     System.out.println("titre=");
@@ -26,6 +27,14 @@ film.setNbExemplaires(nb);
     
     FilmService service=new FilmService();
     service.registerFilm(film);
+    }
+ public void decrireFilmWithConsole(){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Quel est l'identifiant = ");
+    int id= sc.nextInt();
+    FilmService service=new FilmService();
+    Film film=service.getFilmADecrire(id);
+    System.out.println("le film est "+film.getTitre()+" "+film.getGenre());
     }
 }
     

@@ -39,17 +39,18 @@ public class HibernateFilmDAO {
         }
         }
     
+
+    
     }
     
 
-
-
-public void getById(Film film){
+public Film getById(int id){
     
     Session session =HibernateUtil.getSessionFactory().openSession();
+    Film film=null;
     try{
     session.beginTransaction();
-    session.persist(film);
+    film =(Film)session.get(Film.class,id);
     session.getTransaction().commit();
     }catch(HibernateException he){
         he.printStackTrace();
@@ -73,13 +74,9 @@ public void getById(Film film){
         e.printStackTrace();
         }
         }
-        }
-    
     }
-    
+    return film;
 
 
 }
-            
-    
-
+}

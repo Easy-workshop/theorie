@@ -9,12 +9,18 @@ package com.elephorm.formation.core.entity;
 public class Film {
   
   private Integer id;   
-
-   
   private String titre;
   private String genre;
   private Integer nbExemplaires;  
+  
 
+    public Acteur getActeurPrincipal() {
+        return acteurPrincipal;
+    }
+
+    public void setActeurPrincipal(Acteur acteurPrincipal) {
+        this.acteurPrincipal = acteurPrincipal;
+    }
   
    public Integer getId() {
         return id;

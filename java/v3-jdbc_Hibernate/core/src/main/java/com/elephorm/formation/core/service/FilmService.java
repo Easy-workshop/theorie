@@ -26,4 +26,10 @@ public class FilmService {
 
  }
 
+public Film getFilmADecrire(int id){
+
+HibernateFilmDAO dao=new HibernateFilmDAO();
+return dao.getById(id);
+}
+
 }

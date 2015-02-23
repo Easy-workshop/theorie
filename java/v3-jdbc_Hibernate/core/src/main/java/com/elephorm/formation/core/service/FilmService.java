@@ -3,6 +3,10 @@ import com.elephorm.formation.core.entity.Film;
 import com.elephorm.formation.core.repository.FileFilmDAO;
 import com.elephorm.formation.core.repository.HibernateFilmDAO;
 import com.elephorm.formation.core.repository.JDBCFilmDao;
+import java.util.List;
+
+
+
 public class FilmService {
 
     
@@ -32,4 +36,11 @@ HibernateFilmDAO dao=new HibernateFilmDAO();
 return dao.getById(id);
 }
 
+
+public List<Film> getListeFilms(){
+HibernateFilmDAO dao= new HibernateFilmDAO();
+return dao.list();
+}
+
+       
 }

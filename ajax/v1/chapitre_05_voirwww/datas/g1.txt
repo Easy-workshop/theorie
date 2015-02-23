@@ -1,0 +1,14 @@
+{
+"image":{
+"ch_img_id":1,
+"ch_img_rubId":"Calenques",
+"ch_img_titre":"titreG1",
+"ch_img_sousTitre":"soustitreg1",
+"ch_img_description":"descg1",
+"ch_img_texte":"textg1",
+"ch_img_large":"450",
+"ch_img_haut":"299",
+"ch_img_orientation":"Paysage",
+"ch_img_fichier":"g1.jpg",
+"ch_img_keywords":"keywordg1"}
+}

@@ -13,6 +13,12 @@
         <property name="nbExemplaires" column="COPIES"/>
         <property name="genre" column="MOVIE_TYPE"/>
         
+        <many-to-one name="acteurPrincipal" column="MAIN_ACTOR_ID"/>
+        
+        <set name="acteurSecondaires" table="MOVIE_SEC_ACTORS">
+            <key column="ID_MOVIE"/>
+            <many-to-many class="com.elemphorm.formation.core.entity.Acteur" column="ID_ACTOR"/>
+        </set>
     </class>
 
 </hibernate-mapping>

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/*abbr,article,aside,audio,canvas,datlist,details,figure,dialog,footer,header,hgroup,mark,menu,meter,mark,nav,output,progress,section,time,video {display:block;}*/
+body{
+background-color:#ddd;
+/*background-image: url(grille_100.png);*/
+}
+#conteneur{
+width:960px;
+margin: 0 auto;
+}
+
+h1,h2{
+	color:#69f;
+	}
+
+#droite, #article, #piedcontenu, #menu ul{
+	background-color:white;
+	}
+
+#menu ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	width:960px;
+	height:40px;
+	background-color:#ddd;
+	}
+
+#menu li{float:left;}
+.cellules{
+	display:block;
+	width:159px;
+	
+	text-decoration:none;
+	text-align:center;
+	border-right:solid 1px #999;
+
+	}

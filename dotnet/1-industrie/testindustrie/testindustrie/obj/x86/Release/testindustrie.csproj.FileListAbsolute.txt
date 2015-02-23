@@ -1,0 +1,10 @@
+C:\Users\yadrihmi\AppData\Local\Temporary Projects\testindustrie\bin\Release\testindustrie.exe
+C:\Users\yadrihmi\AppData\Local\Temporary Projects\testindustrie\bin\Release\testindustrie.pdb
+C:\Users\yadrihmi\AppData\Local\Temporary Projects\testindustrie\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\yadrihmi\AppData\Local\Temporary Projects\testindustrie\obj\x86\Release\testindustrie.exe
+C:\Users\yadrihmi\AppData\Local\Temporary Projects\testindustrie\obj\x86\Release\testindustrie.pdb
+D:\Users\YADRIHMI\Desktop\MYINDUSTRIE\testindustrie\testindustrie\obj\x86\Release\testindustrie.exe
+D:\Users\YADRIHMI\Desktop\MYINDUSTRIE\testindustrie\testindustrie\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Users\YADRIHMI\Desktop\MYINDUSTRIE\testindustrie\testindustrie\bin\Release\testindustrie.exe
+D:\Users\YADRIHMI\Desktop\MYINDUSTRIE\testindustrie\testindustrie\bin\Release\testindustrie.pdb
+D:\Users\YADRIHMI\Desktop\MYINDUSTRIE\testindustrie\testindustrie\obj\x86\Release\testindustrie.pdb

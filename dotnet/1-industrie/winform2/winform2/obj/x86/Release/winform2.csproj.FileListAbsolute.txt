@@ -1,0 +1,4 @@
+D:\Users\YADRIHMI\Desktop\MYINDUSTRIE\winform2\winform2\obj\x86\Release\winform2.csprojResolveAssemblyReference.cache
+D:\Users\YADRIHMI\Desktop\MYINDUSTRIE\winform2\winform2\obj\x86\Release\winform2.Form1.resources
+D:\Users\YADRIHMI\Desktop\MYINDUSTRIE\winform2\winform2\obj\x86\Release\winform2.Properties.Resources.resources
+D:\Users\YADRIHMI\Desktop\MYINDUSTRIE\winform2\winform2\obj\x86\Release\winform2.csproj.GenerateResource.Cache

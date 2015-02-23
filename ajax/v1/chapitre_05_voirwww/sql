@@ -1,0 +1,23 @@
+INSERT INTO rubriques (ch_rub_id,ch_rub_label,ch_rub_folder)VALUES (1, 'les calenques', 'Calenques');
+INSERT INTO rubriques (ch_rub_id,ch_rub_label,ch_rub_folder)VALUES (2, 'les dejeuner', 'Dejeuner');
+
+
+
+INSERT INTO images (
+ch_img_id,
+ch_img_rubId,
+ch_img_titre,
+ch_img_sousTitre,
+ch_img_description,
+ch_img_texte,
+ch_img_large,
+ch_img_haut,
+ch_img_orientation,
+ch_img_fichier,
+ch_img_keywords)
+VALUES (11, 'Calenques', 'titreG2','soustitreg2','descg2','textg2','450','299','Paysage','g2.jpg','keywordg2');
+VALUES (10, 'Calenques', 'titreG1','soustitreg1','descg1','textg1','450','299','Paysage','g1.jpg','keywordg1');
+
+
+
+

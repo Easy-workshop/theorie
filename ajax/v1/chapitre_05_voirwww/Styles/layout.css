@@ -1,0 +1,28 @@
+/*  body */
+#body {
+	width:100%;
+	
+}
+
+/*  header */
+#header {
+	height: 5em;
+}
+/*   main content*/
+#maincontent {
+	margin: 0px;
+}
+/*   side bar*/
+#sidebar {
+	float: right;
+	height: 25%;
+	padding-bottom: 15px;
+}
+/* footer   */
+#footer {
+	clear: both;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+}

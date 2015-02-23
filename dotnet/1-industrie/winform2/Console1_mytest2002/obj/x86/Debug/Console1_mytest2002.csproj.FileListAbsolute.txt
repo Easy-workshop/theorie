@@ -1,0 +1,4 @@
+D:\Users\yadrihmi\Desktop\MYINDUSTRIE\winform2\Console1_mytest2002\bin\Debug\Console1_mytest2002.exe
+D:\Users\yadrihmi\Desktop\MYINDUSTRIE\winform2\Console1_mytest2002\bin\Debug\Console1_mytest2002.pdb
+D:\Users\yadrihmi\Desktop\MYINDUSTRIE\winform2\Console1_mytest2002\obj\x86\Debug\Console1_mytest2002.exe
+D:\Users\yadrihmi\Desktop\MYINDUSTRIE\winform2\Console1_mytest2002\obj\x86\Debug\Console1_mytest2002.pdb

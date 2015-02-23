@@ -1,0 +1,43 @@
+<?xml version="1.0"	encoding="utf-8"?>
+<images>
+    <image orientation="Paysage">
+    <ch_img_fichier>g1.jpg</ch_img_fichier>
+    <ch_img_sources>g1.txt</ch_img_sources>
+    <ch_img_folder>Calenques</ch_img_folder>
+    </image>
+	
+	<image orientation="Paysage">
+    <ch_img_fichier>g2.jpg</ch_img_fichier>
+    <ch_img_sources>g2.txt</ch_img_sources>
+    <ch_img_folder>Calenques</ch_img_folder>
+    </image>
+	
+	<image orientation="Paysage">
+    <ch_img_fichier>g3.jpg</ch_img_fichier>
+    <ch_img_sources>g3.txt</ch_img_sources>
+    <ch_img_folder>Calenques</ch_img_folder>
+    </image>
+	
+	<image orientation="Paysage">
+    <ch_img_fichier>g00.jpg</ch_img_fichier>
+    <ch_img_sources>gOO.txt</ch_img_sources>
+    <ch_img_folder>Calenques</ch_img_folder>
+    </image>
+	
+	<image orientation="Portrait">
+    <ch_img_fichier>g6.jpg</ch_img_fichier>
+    <ch_img_sources>g6.txt</ch_img_sources>
+    <ch_img_folder>Dejeuner</ch_img_folder>
+    </image>
+	
+	<image orientation="Paysage">
+    <ch_img_fichier>g7.jpg</ch_img_fichier>
+    <ch_img_sources>g7.txt</ch_img_sources>
+    <ch_img_folder>Dejeuner</ch_img_folder>
+    </image>
+	
+	
+	
+	
+	
+</images>

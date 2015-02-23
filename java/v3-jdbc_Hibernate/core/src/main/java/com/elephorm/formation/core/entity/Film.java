@@ -5,6 +5,8 @@
  */
 package com.elephorm.formation.core.entity;
 
+import java.util.Set;
+
 
 public class Film {
   
@@ -12,9 +14,22 @@ public class Film {
   private String titre;
   private String genre;
   private Integer nbExemplaires;  
-  
+  private Acteur acteurPrincipal; 
+  private Set<Acteur> acteurSecondaires;
 
-    public Acteur getActeurPrincipal() {
+    public Set<Acteur> getActeurSecondaires() {
+        return acteurSecondaires;
+    }
+
+    public void setActeurSecondaires(Set<Acteur> acteurSecondaires) {
+        this.acteurSecondaires = acteurSecondaires;
+    }
+   
+  
+  
+  
+  
+  public Acteur getActeurPrincipal() {
         return acteurPrincipal;
     }
 

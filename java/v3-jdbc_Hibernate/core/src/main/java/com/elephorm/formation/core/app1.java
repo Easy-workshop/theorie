@@ -20,11 +20,11 @@ public class app1 {
         
 //     DefaultFilmController controller=new DefaultFilmController();
   
-        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+     ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+     DefaultFilmController controller=(DefaultFilmController)context.getBean("filmController");
         
-        DefaultFilmController controller=(DefaultFilmController)context.getBean("filmController");
         
-        controller.registerFilmFromConsoleInput();
+        
         
         
     }

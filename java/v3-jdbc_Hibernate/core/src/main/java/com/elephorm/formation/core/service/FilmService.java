@@ -10,6 +10,16 @@ import java.util.List;
 
 public class FilmService implements FilmServiceInterface{
 
+    public FilmService(){
+        
+    }
+    
+    public FilmService(FilmDaoInterface dao){
+        this.dao=dao;
+    }
+    
+    
+    
     private FilmDaoInterface dao;
 
     public void setDao(FilmDaoInterface dao) {

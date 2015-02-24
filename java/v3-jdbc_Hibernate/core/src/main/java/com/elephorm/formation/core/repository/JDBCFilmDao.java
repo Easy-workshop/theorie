@@ -10,11 +10,31 @@ import java.util.List;
 
 
 public class JDBCFilmDao implements FilmDaoInterface {
+    private String driverClassName;
+
+    
+    public   JDBCFilmDao(){
+    System.out.println("Constructeur invoqué");
+    }
+    
+    public  JDBCFilmDao(String driverClassName){
+        this.driverClassName=driverClassName;
+    }
+    
+    
+    public String getDriverClassName() {
+        return driverClassName;
+    }
+
+    public void setDriverClassName(String driverClassName) {
+        this.driverClassName = driverClassName;
+    }
+    
     
      public void save(Film film){
           Connection con =null;
       try{
-      Class.forName("com.mysql.jdbc.Driver").newInstance();
+      Class.forName(driverClassName).newInstance();
       con =(Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","root");
       System.out.println("CONNEXION KO");
      

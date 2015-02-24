@@ -12,11 +12,37 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
 http://www.springframework.org/schema/security
 http://www.springframework.org/schema/security/spring-security.xsd">
     
-       <bean id="filmDao" class="com.elephorm.formation.core.repository.JDBCFilmDao"/>
        
-       <bean id="filmService" class="com.elephorm.formation.core.service.FilmService">
-       <property name="dao" ref="filmDao"/>
+    <!--bean id="filmDao" class="com.elephorm.formation.core.repository.JDBCFilmDao" name="dao">
+           <constructor-arg value="com.mysql.jdbc.Driver"/>
+       </bean-->
+       
+<bean id="inFilmDao" class="com.elephorm.formation.core.repository.InMemoryFilmDao">
+<property name="films">
+    <list>
+       <bean class="com.elephorm.formation.core.entity.Film">
+           <property name="titre" value="Insertion par SPRING1"/>
+       </bean>        
+        <bean class="com.elephorm.formation.core.entity.Film">
+           <property name="titre" value="Insertion par SPRING2"/>
+       </bean>        
+    </list>
+
+</property>
+</bean>
+    <!--bean id="filmDao" class="com.elephorm.formation.core.repository.HibernateFilmDAO"/-->
+           
+       
+        
+
+    <bean id="filmService" class="com.elephorm.formation.core.service.FilmService" autowire="byType">
+       <!--constructor-arg ref="filmDao"/-->
        </bean>
+       
+       <!--bean id="filmService2" class="com.elephorm.formation.core.service.FilmService">
+       <property name="dao" ref="filmDao"/>
+       </bean-->
+       
        
        <bean id="filmController" class="com.elephorm.formation.core.controller.DefaultFilmController">
         <property name="service" ref="filmService"/>

@@ -4,7 +4,7 @@
        xsi:shemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
        
-       <bean id="filmDao" class="com.elephorm.formation.core.repository.JDBCFilmDao"/>
+       <bean id="filmDao" class="com.elephorm.formation.core.repository.HibernateFilmDAO"/>
        
        <bean id="filmService" class="com.elephorm.formation.core.service.FilmService">
        <property name="dao" ref="filmDao"/>

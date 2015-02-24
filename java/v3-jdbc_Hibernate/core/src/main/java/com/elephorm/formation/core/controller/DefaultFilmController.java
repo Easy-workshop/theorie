@@ -3,11 +3,25 @@ package com.elephorm.formation.core.controller;
 import com.elephorm.formation.core.entity.Acteur;
 import com.elephorm.formation.core.entity.Film;
 import com.elephorm.formation.core.service.FilmService;
+import com.elephorm.formation.core.service.FilmServiceInterface;
 import java.util.List;
 import java.util.Scanner;
 
 public class DefaultFilmController {
-   
+   private FilmServiceInterface service;
+
+    public void setService(FilmServiceInterface service) {
+        this.service = service;
+    }
+
+    public FilmServiceInterface getService() {
+        return service;
+    }
+    
+    
+    
+    
+    
     public void registerFilmFromConsoleInput(){
     Scanner sc=new Scanner(System.in);
     System.out.println("titre=");
@@ -39,14 +53,14 @@ acteur.setPrenom(prenom);
 
 film.setActeurPrincipal(acteur);
 
-    FilmService service=new FilmService();
+    //FilmService service=new FilmService();
     service.registerFilm(film);
     }
  public void decrireFilmWithConsole(){
     Scanner sc=new Scanner(System.in);
     System.out.println("Quel est l'identifiant = ");
     int id= sc.nextInt();
-    FilmService service=new FilmService();
+//    FilmService service=new FilmService();
     Film film=service.getFilmADecrire(id);
     System.out.println("le film est "+film.getTitre()+" "+film.getGenre());
     System.out.println("son acteur principal est "+film.getActeurPrincipal().getNom()+" "+film.getActeurPrincipal().getPrenom());
@@ -58,7 +72,7 @@ film.setActeurPrincipal(acteur);
 
  public void ListFilmToConsole(){
    
-    FilmService service=new FilmService();
+  //  FilmService service=new FilmService();
     List<Film> films=service.getListeFilms();
     if(films != null){
     for(Film film: films )

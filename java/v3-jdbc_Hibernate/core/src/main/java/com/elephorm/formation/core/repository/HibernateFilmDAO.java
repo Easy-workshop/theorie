@@ -9,9 +9,10 @@ import org.hibernate.Query;
 import org.hibernate.classic.Session;
 
 
-public class HibernateFilmDAO {
+public class HibernateFilmDAO implements FilmDaoInterface {
 
-    public void save(Film film){
+   
+ public void save(Film film){
     
     Session session =HibernateUtil.getSessionFactory().openSession();
     try{
@@ -45,9 +46,7 @@ public class HibernateFilmDAO {
 
     
     }
-    
-
-public Film getById(int id){
+ public Film getById(int id){
     
     Session session =HibernateUtil.getSessionFactory().openSession();
     Film film=null;
@@ -84,7 +83,6 @@ public Film getById(int id){
 
 
 }
-
 public List<Film> list(){
     
     Session session =HibernateUtil.getSessionFactory().openSession();
@@ -123,5 +121,25 @@ public List<Film> list(){
 
 
 }
+
+    
+    public void registerFilm(Film film) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    
+    public Film getFilmADecrire(int id) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    
+    public List<Film> getListeFilms() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+   
+    public void save() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
 }

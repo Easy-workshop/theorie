@@ -1,0 +1,27 @@
+body
+{
+    background: url('images/fond_jaune.png');
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+#globale_page
+{
+    width: 900px;
+    margin: auto;
+}
+
+#mylog, #menu
+{
+    display: inline-block;
+    vertical-align: top;
+}
+#mylog
+{
+    width: 50%;
+}
+
+#menu
+{
+    width: 40%;
+}
+

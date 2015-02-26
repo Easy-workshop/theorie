@@ -1,0 +1,26 @@
+body
+{
+    background: url('images/fond_jaune.png');
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+#globale_page
+{
+    width: 900px;
+    margin: auto;
+}
+
+#banniere
+{
+position: relative;
+height:200px;
+background: url('images/sanfrancisco.jpg') no-repeat;
+}
+#titredansbanniere
+{
+position: absolute;
+width: 99.5%;
+height: 33px;
+bottom: 0;
+background-color: rgba(24,24,24,0.8);
+}

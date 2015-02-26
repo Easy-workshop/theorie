@@ -5,6 +5,7 @@ import com.elephorm.formation.core.repository.FilmDaoInterface;
 import com.elephorm.formation.core.repository.HibernateFilmDAO;
 import com.elephorm.formation.core.repository.JDBCFilmDao;
 import java.util.List;
+import javax.annotation.Resource;
 
 
 
@@ -17,7 +18,6 @@ public class FilmService implements FilmServiceInterface{
     public FilmService(FilmDaoInterface dao){
         this.dao=dao;
     }
-    
     
     
     private FilmDaoInterface dao;

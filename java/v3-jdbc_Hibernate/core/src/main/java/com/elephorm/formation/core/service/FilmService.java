@@ -1,14 +1,15 @@
 package com.elephorm.formation.core.service;
 import com.elephorm.formation.core.entity.Film;
-import com.elephorm.formation.core.repository.FileFilmDAO;
+import com.elephorm.formation.core.repository.file.FileFilmDAO;
 import com.elephorm.formation.core.repository.FilmDaoInterface;
-import com.elephorm.formation.core.repository.HibernateFilmDAO;
-import com.elephorm.formation.core.repository.JDBCFilmDao;
+import com.elephorm.formation.core.repository.hibernate.HibernateFilmDAO;
+import com.elephorm.formation.core.repository.jdbc.JDBCFilmDao;
 import java.util.List;
 import javax.annotation.Resource;
+import org.springframework.stereotype.Service;
 
 
-
+@Service
 public class FilmService implements FilmServiceInterface{
 
     public FilmService(){

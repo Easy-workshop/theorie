@@ -1,6 +1,7 @@
-package com.elephorm.formation.core.repository;
+package com.elephorm.formation.core.repository.inmemory;
 
 import com.elephorm.formation.core.entity.Film;
+import com.elephorm.formation.core.repository.FilmDaoInterface;
 import java.util.List;
 
 public class InMemoryFilmDao implements FilmDaoInterface {

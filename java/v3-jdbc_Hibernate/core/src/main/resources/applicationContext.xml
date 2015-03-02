@@ -7,7 +7,9 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
 http://www.springframework.org/schema/context
 http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
-    <context:annotation-config/>
+    <context:component-scan base-package="com.elephorm.formation.core.repository.hibernate"/>
+    <context:component-scan base-package="com.elephorm.formation.core.service"/>
+    <context:component-scan base-package="com.elephorm.formation.core.controller"/>
        
     <!--bean id="filmDao" class="com.elephorm.formation.core.repository.JDBCFilmDao" name="dao">
            <constructor-arg value="com.mysql.jdbc.Driver"/>
@@ -16,19 +18,19 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
     <!--bean id="filmDao" class="com.elephorm.formation.core.repository.HibernateFilmDAO"/-->
            
-      <bean id="filmServie" class="com.elephorm.formation.core.repository.HibernateFilmDAO"/> 
+      <!--bean id="filmServie" class="com.elephorm.formation.core.repository.HibernateFilmDAO"/--> 
         
 
-    <bean id="filmService" class="com.elephorm.formation.core.service.FilmService">
+    <!--bean id="filmService" class="com.elephorm.formation.core.service.FilmService"-->
        <!--constructor-arg ref="filmDao"/-->
-       </bean>
+       <!--/bean-->
        
        <!--bean id="filmService2" class="com.elephorm.formation.core.service.FilmService">
        <property name="dao" ref="filmDao"/>
        </bean-->
        
        
-       <bean id="filmController" class="com.elephorm.formation.core.controller.DefaultFilmController">
+       <!--bean id="filmController" class="com.elephorm.formation.core.controller.DefaultFilmController">
         <property name="service" ref="filmService"/>
-       </bean>
+       </bean-->
 </beans>

@@ -1,14 +1,19 @@
-package com.elephorm.formation.core.repository;
+package com.elephorm.formation.core.repository.jdbc;
+
+
 
 import com.elephorm.formation.core.entity.Film;
+import com.elephorm.formation.core.repository.FilmDaoInterface;
 import com.mysql.jdbc.Connection;
 
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
+import org.springframework.stereotype.Repository;
 
 
+@Repository
 public class JDBCFilmDao implements FilmDaoInterface {
     private String driverClassName;
 

@@ -19,7 +19,7 @@ public class FilmService implements FilmServiceInterface{
         this.dao=dao;
     }
     
-    
+    @Resource
     private FilmDaoInterface dao;
 
     public void setDao(FilmDaoInterface dao) {
